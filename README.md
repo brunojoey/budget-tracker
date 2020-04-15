@@ -1,30 +1,38 @@
-# budget-tracker
+# Budget Tracker
 
-Add functionality to our existing Budget Tracker application to allow for offline access and functionality.
+## Table of Contents
+* [Author(s)](#author(s))
+* [Description](#description)
+* [Technologies Used](#technologies-used)
+* [Installation](#installation)
+* [Usage](#usage)
+* [Contributing](#contributing)
+* [Deployment Application Link](#deployment-application-link)
+* [Application in Use](#application-in-use)
 
-The user will be able to add expenses and deposits to their budget with or without a connection. When entering transactions offline, they should populate the total when brought back online.
+## Author(s)
+Joey Bruno
 
-Offline Functionality:
+## Description
+This is a Budget Tracker application so you can track your budget and payments you make each day then see the long term in the chart shown. You can keep track of the bills you payed off and the income you make. 
 
-  * Enter deposits offline
+## Technologies Used
+* Node JS
+* Service-Workers
+* Manifest
+* Mongoose
 
-  * Enter expenses offline
+## Installation
+To install this application you clone the SSH Key from the main hub page of this repository and you paste that clone link into your Terminal with git clone.
 
-When brought back online:
+## Usage
+To use this application you go to the deployed link available within this README file and then type in your finances, whether they be income or bills. The chart will be there to track each transaction that you have.
 
-  * Offline entries should be added to tracker.
+## Contributing
+To contribute, clone this repository into your terminal, work on the project, then create a pull request.
 
-## User Story
-AS AN avid traveller
-I WANT to be able to track my withdrawals and deposits with or without a data/internet connection
-SO THAT my account balance is accurate when I am traveling
+## Deployment Application Link
+[Deployed Budget Tracker Application Link](https://boiling-lake-39406.herokuapp.com/)
 
-## Business Context
-
-Giving users a fast and easy way to track their money is important, but allowing them to access that information anytime is even more important. Having offline functionality is paramount to our applications success.
-
-
-## Acceptance Criteria
-GIVEN a user is on Budget App without an internet connection
-WHEN the user inputs a withdrawal or deposit
-THEN that will be shown on the page, and added to their transaction history when their connection is back online.
+## Application in Use
+![Budget Tracker Application In Use](/budget-tracker-demo.gif)

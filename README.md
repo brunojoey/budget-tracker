@@ -14,7 +14,7 @@
 Joey Bruno
 
 ## Description
-This is a Budget Tracker application so you can track your budget and payments you make each day then see the long term in the chart shown. You can keep track of the bills you payed off and the income you make. 
+This is a Budget Tracker application so you can track your budget and payments you make each day then see the long term in the chart shown. You can keep track of the bills you paid off and the income you make. 
 
 ## Technologies Used
 * Node JS

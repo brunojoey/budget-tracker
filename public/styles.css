@@ -47,6 +47,6 @@ tr:nth-child(even) {
   text-align: left;
   max-height: 300px;
   overflow: auto;
-  width: 80%;
+  width: 90%;
   margin: 0 auto;
 }

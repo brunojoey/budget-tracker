@@ -22,7 +22,7 @@ function populateTotal() {
 
   let totalEl = document.querySelector('#total');
   totalEl.textContent = total;
-}
+};
 
 function populateTable() {
   let tbody = document.querySelector('#tbody');
@@ -38,7 +38,7 @@ function populateTable() {
 
     tbody.appendChild(tr);
   });
-}
+};
 
 function populateChart() {
   // copy array and reverse it
@@ -60,7 +60,7 @@ function populateChart() {
   // remove old chart if it exists
   if (myChart) {
     myChart.destroy();
-  }
+  };
 
   let ctx = document.getElementById('myChart').getContext('2d');
 
@@ -76,7 +76,7 @@ function populateChart() {
         }]
     }
   });
-}
+};
 
 function sendTransaction(isAdding) {
   let nameEl = document.querySelector('#t-name');
@@ -90,7 +90,7 @@ function sendTransaction(isAdding) {
   }
   else {
     errorEl.textContent = '';
-  }
+  };
 
   // create record
   let transaction = {
@@ -102,7 +102,7 @@ function sendTransaction(isAdding) {
   // if subtracting funds, convert amount to negative number
   if (!isAdding) {
     transaction.value *= -1;
-  }
+  };
 
   // add to beginning of current array of data
   transactions.unshift(transaction);

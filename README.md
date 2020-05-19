@@ -23,10 +23,10 @@ This is a Budget Tracker application so you can track your budget and payments y
 * Mongoose
 
 ## Installation
-To install this application you clone the SSH Key from the main hub page of this repository and you paste that clone link into your Terminal with git clone.
+To install this application you clone the SSH Key from the main page of this repository and you paste that clone link into your Terminal with git clone.
 
 ## Usage
-To use this application you go to the deployed link available within this README file and then type in your finances, whether they be income or bills. The chart will be there to track each transaction that you have.
+To use this application you go to the deployed link available within this README file and then type in your finances, whether they be income or expenses. The chart will be there to track each transaction that you have.
 
 ## Contributing
 To contribute, clone this repository into your terminal, work on the project, then create a pull request.

@@ -1,8 +1,8 @@
 let db;
-const request = indexedDB.open("budget-trackerDB");
+const request = indexedDB.open('budget-trackerDB');
 
 request.onupgradeneeded = function(event) {
-  // create object store called "pending" and set autoIncrement to true
+  // create object store called 'pending' and set autoIncrement to true
   db = event.target.result
   db.createObjectStore('pending', { autoIncrement: true });
 };
@@ -21,8 +21,8 @@ request.onerror = function(event) {
 };
 
 function saveRecord(record) {
-  const tx = db.transaction("pending", "readwrite");
-  const store = tx.objectStore("pending");
+  const tx = db.transaction('pending', 'readwrite');
+  const store = tx.objectStore('pending');
   store.add(record);
 };
 
@@ -33,12 +33,12 @@ function checkDatabase() {
 
   getAll.onsuccess = function () {
     if (getAll.result.length > 0) {
-      fetch("/api/transaction/bulk", {
-        method: "POST",
+      fetch('/api/transaction/bulk', {
+        method: 'POST',
         body: JSON.stringify(getAll.result),
         headers: {
-          Accept: "application/json, text/plain, */*",
-          "Content-Type": "application/json"
+          Accept: 'application/json, text/plain, */*',
+          'Content-Type': 'application/json'
         }
       })
         .then(response => response.json())
@@ -51,4 +51,4 @@ function checkDatabase() {
   };
 };
 
-  window.addEventListener("online", checkDatabase);
+  window.addEventListener('online', checkDatabase);
